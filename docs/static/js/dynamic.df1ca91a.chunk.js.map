@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/dynamic.js"],"names":["__webpack_require__","r","__webpack_exports__","console","log"],"mappings":"yFAAAA,EAAAC,EAAAC,GAAeA,EAAA,mBACbC,QAAQC,IAAI","file":"static/js/dynamic.df1ca91a.chunk.js","sourcesContent":["export default () => {\n  console.log('Im dynamically loaded...');\n};\n"],"sourceRoot":""}
