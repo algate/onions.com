@@ -1,0 +1,28 @@
+body, img {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'myFont';
+  src: url('../assets/font/handfont.ttf');
+}
+
+body {
+  font-family: "myFont", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.region {
+  padding: 10px;
+  border: 5px solid #ddd;
+  border-radius: 12px;
+  margin: 10px 20px;
+}

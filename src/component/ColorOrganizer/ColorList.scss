@@ -1,0 +1,90 @@
+@import "../../style/globals.scss";
+
+div.color-list {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  // overflow: scroll;
+}
+
+section.color {
+  @include shadow;
+  border: 2px solid $light-grey;
+  border-bottom-color: darken($light-grey, 40%);
+  border-right-color: darken($light-grey, 40%);
+  margin: 1em;
+  padding: 0;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media screen and (min-width: $break-sm) {
+    flex-basis: calc(50% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-md) {
+    flex-basis: calc(33.33333% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-lg) {
+    flex-basis: calc(25% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-xl) {
+    flex-basis: calc(16.66666% - 2em - 4px);
+  }
+
+  h1 {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: 0.5em;
+    flex-basis: calc(100% - 1em);
+  }
+
+  button {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    flex-basis: calc(12% - 1em);
+    text-align: right;
+    @include fade-bg($light, $light-grey);
+    padding: 0.75em;
+    border-radius: 0.5px;
+  }
+
+  > div:last-child {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5em;
+  }
+
+  div.color {
+    height: 100px;
+    flex-basis: 100%;
+  }
+
+  div.time-ago {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    font-family: monospace;
+    color: darken($light-grey, 40%);
+  }
+}
+
+div.star {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 2px;
+  float: left;
+  background-color: darken($light-grey, 40%);
+  clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+
+  &.selected {
+    background-color: red;
+  }
+}
