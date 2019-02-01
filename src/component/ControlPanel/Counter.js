@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+// import { Button } from 'antd-mobile';
+import { Button } from 'antd';
+
 class Counter extends Component {
   // 1.创建组件类实例
     // 1.1一初始化state
@@ -47,8 +50,8 @@ class Counter extends Component {
     // console.log('enter render:' + caption);
     return (
       <div>
-        <button onClick={this.onClickIncrementButton}> + </button>
-        <button onClick={this.onClickDecrementButton}> - </button>
+        <Button type="primary" size="small" onClick={this.onClickIncrementButton}> + </Button>
+        <Button type="primary" size="small" onClick={this.onClickDecrementButton}> - </Button>
         <span>{caption} count: {this.state.count}</span>
       </div>
     );

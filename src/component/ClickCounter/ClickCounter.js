@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Button } from 'antd';
 class ClickCounter extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +14,7 @@ class ClickCounter extends Component {
   render() {
     return (
       <div className="region">
-        <button onClick={this.onClickButton}>Click me!</button>
+        <Button type="primary" size="small" onClick={this.onClickButton}>Click me!</Button>
         <div>
           click count: {this.state.count}
         </div>

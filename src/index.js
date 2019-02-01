@@ -7,7 +7,9 @@ import ClickCounter from './component/ClickCounter/ClickCounter';
 import ControlPanel from './component/ControlPanel/ControlPanel';
 import ColorOrganizer from './component/ColorOrganizer/ColorOrganizer';
 
-import Routes from './config/Router'
+import Routes from './config/Router';
+
+// import 'antd-mobile/dist/antd-mobile.css';
 
 import * as serviceWorker from './serviceWorker';
 
