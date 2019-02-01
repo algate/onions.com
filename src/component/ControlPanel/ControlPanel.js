@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Counter from './Counter';
 
+import { Button } from 'antd';
+
 class ControlPanel extends Component {
   constructor(props) {
     super(props);
@@ -21,9 +23,9 @@ class ControlPanel extends Component {
         <Counter onUpdate={this.onCounterUpdate} caption="First" />
         <Counter onUpdate={this.onCounterUpdate} caption="Second" initValue={this.initValues[1]} />
         <Counter onUpdate={this.onCounterUpdate} caption="Third" initValue={this.initValues[2]} />
-        <button onClick={() => this.forceUpdate()}>
+        <Button type="primary" ghost onClick={() => this.forceUpdate()}>
           Click me to repaint!
-        </button>
+        </Button>
         <div>Total Count: {this.state.sum}</div>
       </div>
     );

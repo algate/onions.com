@@ -50,8 +50,6 @@ section.color {
     flex-basis: calc(12% - 1em);
     text-align: right;
     @include fade-bg($light, $light-grey);
-    padding: 0.75em;
-    border-radius: 0.5px;
   }
 
   > div:last-child {

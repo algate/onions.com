@@ -49,10 +49,10 @@ class Counter extends Component {
     // ES6 的解构赋值语法，从this.props 中获得了名为 caption 的 prop 值
     // console.log('enter render:' + caption);
     return (
-      <div>
+      <div style={{marginBottom: "10px"}}>
         <Button type="primary" size="small" onClick={this.onClickIncrementButton}> + </Button>
+        <span style={{margin: "0 10px"}}>{caption} count: {this.state.count}</span>        
         <Button type="primary" size="small" onClick={this.onClickDecrementButton}> - </Button>
-        <span>{caption} count: {this.state.count}</span>
       </div>
     );
   }

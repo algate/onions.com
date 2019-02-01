@@ -12,19 +12,17 @@ form.add-color {
   button {
     margin: 0.5em;
     padding: 0.25em;
-    font-size: 1.2em;
     border-radius: 5px;
   }
 
   input[type="color"] {
     padding: 0;
-    height: +2em;
-  }
-
-  button {
-    background-color: green;
-    color: white;
-    border: none;
+    border: 0;
+    outline: none;
+    ::-webkit-color-swatch-wrapper{background-color:#ffffff;}
+    ::-webkit-color-swatch{position: relative;}
+    width: 32px;
+    height: 32px;
   }
 
 }

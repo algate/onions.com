@@ -3,6 +3,8 @@ import React from 'react'
 import StarRating from './StarRating'
 import './ColorList.scss'
 
+import { Button } from 'antd'
+
 // 无状态函数式组价
 const ColorList = ({ colors=[], onRemove=f=>f, rating = 0, onRate=f=>f }) =>
   <div className="color-list">
@@ -14,7 +16,7 @@ const ColorList = ({ colors=[], onRemove=f=>f, rating = 0, onRate=f=>f }) =>
         console.log(colors);
         return <section className="color" key={color.id}>
             <h1>{title}</h1>
-            <button onClick={()=>onRemove(id)}>X</button>
+            <Button type="danger" ghost size="small" onClick={()=>onRemove(id)}>X</Button>
             <div className="color"
                  style={{ backgroundColor: hue }}>
             </div>
