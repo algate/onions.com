@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{184:function(n,o,c){"use strict";c.r(o),o.default=function(){console.log("Im dynamically loaded...")}}}]);
-//# sourceMappingURL=dynamic.48e87e39.chunk.js.map

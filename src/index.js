@@ -3,9 +3,9 @@ import React from 'react';
 import { render } from 'react-dom';
 import './style/index.scss';
 
-import ClickCounter from './component/ClickCounter/ClickCounter';
-import ControlPanel from './component/ControlPanel/ControlPanel';
-import ColorOrganizer from './component/ColorOrganizer/ColorOrganizer';
+// import ClickCounter from './component/ClickCounter/ClickCounter';
+// import ControlPanel from './component/ControlPanel/ControlPanel';
+// import ColorOrganizer from './component/ColorOrganizer/ColorOrganizer';
 
 import Routes from './config/Router';
 
@@ -16,30 +16,30 @@ import * as serviceWorker from './serviceWorker';
 // ReactDOM.render(
 render(
     <div>
-        <ClickCounter />
+        {/* <ClickCounter />
         <ControlPanel />
-        <ColorOrganizer />
+        <ColorOrganizer /> */}
         <div>下边是添加路由的组件</div>
         <Routes/>
     </div>,
     document.querySelector('#root')
 );
 // 动态加载js文件
-const btn = document.getElementById('btn');
-btn.onclick = () => {
-  import(/* webpackChunkName: "dynamic" */ './js/dynamic').then((module) => {
-    const fn = module.default;
-    fn();
-  });
-};
+// const btn = document.getElementById('btn');
+// btn.onclick = () => {
+//   import(/* webpackChunkName: "dynamic" */ './js/dynamic').then((module) => {
+//     const fn = module.default;
+//     fn();
+//   });
+// };
 if (module.hot) {
   console.log('HMR');
   module.hot.accept(() => {
     render(
       <div>
-          <ClickCounter />
+          {/* <ClickCounter />
           <ControlPanel />
-          <ColorOrganizer />
+          <ColorOrganizer /> */}
           <div>下边是添加路由的组件</div>
           <Routes />
       </div>,
